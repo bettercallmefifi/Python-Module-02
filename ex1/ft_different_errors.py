@@ -1,5 +1,5 @@
 def garden_operations() -> None:
-
+    """Test handling of individual error types."""
     try:
         print("Testing ValueError...")
         int("abc")

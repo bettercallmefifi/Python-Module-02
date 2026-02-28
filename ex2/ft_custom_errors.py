@@ -51,7 +51,7 @@ def test_custom_errors() -> None:
     test_water_error()
     print()
 
-    print("Testing GardenError...")
+    print("Testing catching all garden errors...")
     test_garden_error()
     print()
 
