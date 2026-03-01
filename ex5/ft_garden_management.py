@@ -23,7 +23,7 @@ class GardenManager:
     def add_plant(self, plant_name: str) -> None:
         try:
             if not plant_name:
-                raise PlantError("Plant name connot be empty!")
+                raise PlantError("Plant name cannot be empty!")
             self.plants.append(plant_name)
             print(f"Added {plant_name} successfully")
         except PlantError as error:
@@ -59,7 +59,7 @@ class GardenManager:
                 f"Water level {water_level} is too low (min 1)")
         if water_level > 10:
             raise PlantError(
-                f" Water level {water_level} is too high (max 10)")
+                f"Water level {water_level} is too high (max 10)")
 
         if sunlight_hours < 2:
             raise PlantError(
@@ -100,7 +100,7 @@ def test_garden_management() -> None:
     try:
         raise WaterError("Not enough water in tank")
     except WaterError as error:
-        print(f"caught GardenError: {error}")
+        print(f"Caught GardenError: {error}")
         print("System recovered and continuing...")
 
     print()

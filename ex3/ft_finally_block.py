@@ -4,7 +4,7 @@ def water_plants(plant_group: list[str]) -> None:
         for plant in plant_group:
             if plant is None:
                 raise ValueError("Cannot water None - invalid plant!")
-            print(f"watering {plant}")
+            print(f"Watering {plant}")
     except ValueError as error:
         print(f"Error: {error}")
     finally:

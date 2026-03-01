@@ -15,7 +15,7 @@ class WaterError(GardenError):
 
 def test_plant_error() -> None:
     try:
-        raise PlantError("The tomato plant wilting!")
+        raise PlantError("The tomato plant is wilting!")
     except PlantError as error:
         print("Caught PlantError:", error)
 
